@@ -1,5 +1,5 @@
 // 음이 아닌 정수 n을 입력받아 n이 0이면 종료하고 n이 0이 아니면 1~n까지 홀수들과 짝수들의 역원들을 모두 더하라
-// while, break 사용
+// while, break 사용, sum printf 하나의 block으로 묶음
 
 #include <stdio.h>
 
@@ -42,19 +42,6 @@ int main(void)
             }
             
             printf("=%d\n\n", sum);
-
-            /* printf("%d", 1);
-            int flag=2;
-            while (flag<=n)
-            {
-                if (flag%2!=0)
-                    printf("+%d", flag);
-                else 
-                    printf("-%d", flag);
-
-                flag++;
-            }
-            printf("=%d\n\n", sum); */
         }
     }
 
