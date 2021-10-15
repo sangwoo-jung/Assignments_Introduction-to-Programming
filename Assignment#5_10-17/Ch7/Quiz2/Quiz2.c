@@ -1,5 +1,5 @@
 // 1~100까지의 수중 3, 5, 7의 배수를 제외한 나머지 수들을 한 행에 10개씩 출력하라
-// for 사용, continue 사용
+// for 사용, continue 사용하지 말고
 
 #include <stdio.h>
 
@@ -23,9 +23,6 @@ int main(void)
                 count=1;
             }
         }
-
-        else 
-            continue;
     }
 
     printf("\n");
