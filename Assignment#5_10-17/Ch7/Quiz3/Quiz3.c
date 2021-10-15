@@ -19,18 +19,31 @@ int main(void)
         {
             int sum=0;
             int num=1;
-
             while (num<=n)
             {
                 if (num%2!=0)
+                {   
                     sum=sum+num;
+
+                    if (num==1)
+                        printf("%d", 1);
+                    else 
+                        printf("+%d", num);
+                }
+
                 else
+                {    
                     sum=sum+(-num);
+
+                    printf("-%d", num);
+                }    
 
                 num++;
             }
+            
+            printf("=%d\n\n", sum);
 
-            printf("%d", 1);
+            /* printf("%d", 1);
             int flag=2;
             while (flag<=n)
             {
@@ -41,10 +54,7 @@ int main(void)
 
                 flag++;
             }
-            
-            printf("=%d", sum);
-
-            printf("\n\n");
+            printf("=%d\n\n", sum); */
         }
     }
 
