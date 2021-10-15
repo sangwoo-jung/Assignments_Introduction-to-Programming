@@ -5,9 +5,10 @@
 
 int main(void)
 {
+    int i=1;
     int count=0;    // # of columns
 
-    for (int i=1; i<=100; i++)
+    while ( i<=100 )
     {
         if ( i%3!=0 && i%5!=0 && i%7!=0 )
         {    
@@ -23,6 +24,8 @@ int main(void)
                 count=1;
             }
         }
+
+        i++;
     }
 
     printf("\n");
